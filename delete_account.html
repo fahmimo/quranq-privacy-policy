@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Account - QuranQ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1B5E20;
+            --primary-light: #F1F8F1;
+            --error: #D32F2F;
+            --error-light: #FFEBEE;
+            --accent: #FFD700;
+            --text-dark: #1A1A1A;
+            --text-light: #666666;
+            --bg: #F9FBF9;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text-dark);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(135deg, var(--error) 0%, #B71C1C 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .header-content h1 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 2.5rem;
+            margin: 0;
+            letter-spacing: -1px;
+        }
+        .header-content p {
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+        main {
+            max-width: 800px;
+            margin: -40px auto 60px;
+            padding: 0 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 24px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        .instruction-step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 16px;
+            border: 1px solid #eee;
+            transition: transform 0.2s;
+        }
+        .instruction-step:hover {
+            transform: translateY(-2px);
+            border-color: var(--primary);
+        }
+        .step-number {
+            background: var(--primary);
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        .step-text b {
+            color: var(--primary);
+            display: block;
+            margin-bottom: 4px;
+        }
+        .warning-box {
+            background: var(--error-light);
+            padding: 25px;
+            border-radius: 20px;
+            border-left: 5px solid var(--error);
+            margin: 40px 0;
+        }
+        .warning-box h3 {
+            color: var(--error);
+            margin-top: 0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        h2 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+        }
+        .footer-note {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+        .nav-links {
+            margin-top: 20px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            transition: opacity 0.3s;
+        }
+        .nav-links a:hover {
+            opacity: 0.7;
+        }
+        @media (max-width: 600px) {
+            header { padding: 40px 20px; }
+            .header-content h1 { font-size: 2rem; }
+            .card { padding: 25px; }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="header-content">
+        <h1>QuranQ</h1>
+        <p>Account Deletion Request</p>
+        <div class="nav-links">
+            <a href="index.html">Privacy</a>
+            <a href="terms.html">Terms</a>
+            <a href="delete_account.html"><b>Delete Account</b></a>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="card">
+        <p>At <strong>QuranQ</strong>, we respect your data ownership. You have the full right to permanently delete your account and all associated data at any time directly through the application.</p>
+        <div class="warning-box">
+            <h3>Warning: Irreversible Action</h3>
+            <p>Deleting your account is permanent. Once completed:</p>
+            <ul style="margin-bottom: 0;">
+                <li>Your profile and learning progress will be wiped.</li>
+                <li>Your unique username will be released for others.</li>
+                <li>Your community posts and achievements will be deleted.</li>
+                <li><b>This action cannot be undone.</b></li>
+            </ul>
+        </div>
+        <h2>How to Delete Your Account</h2>
+        <p>To comply with Apple's security requirements, account deletion must be initiated from within the authenticated application:</p>
+        <div class="instruction-step">
+            <div class="step-number">1</div>
+            <div class="step-text">
+                <b>Open QuranQ App</b>
+                Launch the application on your iOS or Android device.
+            </div>
+        </div>
+        <div class="instruction-step">
+            <div class="step-number">2</div>
+            <div class="step-text">
+                <b>Go to Settings</b>
+                Tap the <b>Profile</b> tab, then select the <b>Settings icon</b> (gear) at the top right.
+            </div>
+        </div>
+        <div class="instruction-step">
+            <div class="step-number">3</div>
+            <div class="step-text">
+                <b>Find "Hapus Akun"</b>
+                Scroll to the bottom of the Settings menu and tap on <b>"Hapus Akun secara Permanen"</b> (Permanently Delete Account).
+            </div>
+        </div>
+        <div class="instruction-step">
+            <div class="step-number">4</div>
+            <div class="step-text">
+                <b>Confirm Deletion</b>
+                A confirmation dialog will appear. Tap <b>"Hapus"</b> to proceed with the permanent deletion.
+            </div>
+        </div>
+        <h2>Data Retention Policy</h2>
+        <p>Upon clicking the delete button, your data is removed from our live databases (Cloud Firestore) immediately. Backup snapshots may persist in our encrypted backup systems for up to 30 days before being purged automatically, strictly for disaster recovery purposes.</p>
+        <h2>Need Assistance?</h2>
+        <p>If you have lost access to your device and need to request deletion manually, please contact us via our support email mentioning your registered username/email.</p>
+    </div>
+</main>
+<div class="footer-note">
+    <p>&copy; 2026 QuranQ. Developed for the Ummah.<br>Smart with Al-Quran.</p>
+</div>
+</body>
+</html>
